@@ -1,11 +1,10 @@
+import "dotenv/config"
 import { MongoClient } from "mongodb";
-// const  url="mongodb://localhost:27017";
 import dns from "dns";
 
 dns.setServers(["1.1.1.1","8.8.8.8"])
 
-const url="mongodb+srv://parthaghoshgoas_db_user:goas2005@cluster0.c0xlgc0.mongodb.net/?appName=Cluster0"
-
+const url=process.env.MONGODB_URL;
 const dbname="node-project";
 export const collectionname="todo";
 
