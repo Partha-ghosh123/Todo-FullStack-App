@@ -10,7 +10,6 @@ function Navbar() {
     const logout=()=>{
         localStorage.removeItem("login");
        setlogin(null);
-       
        setTimeout(() => {
         navigate("/login");
        }, 0);

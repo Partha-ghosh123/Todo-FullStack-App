@@ -5,7 +5,4 @@ export default function Protected({children}){
         return <Navigate to="/login" replace />
     }
     return children;
-    // }else{
-    //     return <h1>404 Not Found</h1>
-    // }
 }
